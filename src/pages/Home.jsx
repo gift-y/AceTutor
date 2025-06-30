@@ -66,7 +66,7 @@ const Home = () => {
       </Wrapper>
 
       <Wrapper>
-        <div  className="flex flex-col items-start justify-center w-full">
+        <div className="flex flex-col items-start justify-center w-full">
           <h2 className="text-3xl text-[var(--secondary-color)] md:text-5xl w-full md:w-xl text-left font-semibold pt-20 md:pt-20 lg:pt-40 py-10">
             Designed for student groups, study sessions, and collaborative
             projects.
@@ -77,13 +77,16 @@ const Home = () => {
               return (
                 <div
                   key={index}
-                  className="flex flex-col w-full md:w-1/3 h- p-5 bg-[var(--accent)] rounded-xl"
+                  className="flex flex-col w-full md:w-1/3 h-full p-5 bg-[var(--accent)] rounded-xl"
                 >
-                  <h4 className="md:text-2xl text-[var(--secondary-color)] text-3xl font-bold py-6">
-                    {item.title}
-                  </h4>
-                  <p className="text-[var(--secondary-color)]">{item.description}</p>
-                  <div className={`w-full h-[200px] ${item.bgColor}`}></div>
+                  <div className={`w-full h-72 rounded-2xl py-3 px-5 ${item.bgColor}`}>
+                    <h4 className="md:text-2xl text-[var(--secondary-color)] text-3xl font-bold py-6">
+                      {item.title}
+                    </h4>
+                    <p className="text-[var(--secondary-color)] font-semibold">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
               );
             })}

@@ -43,7 +43,7 @@ export const content = [
     {
         title: "Track Your Progress",
         description:
-        "Monitor your learning journey with detailed analytics and insights tailored to your performance.",
+        "Monitor your learning journey with detailed analytics and insights tailored to your performance. ",
         // image: "" Image if any},
         bgColor: "bg-orange-500",
     }

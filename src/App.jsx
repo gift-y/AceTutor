@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Faq from "./pages/Faq";
 import GetStarted from "./pages/Get-started";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <div className="">
@@ -16,7 +18,9 @@ function App() {
           <Route path="/faqs" element={<Faq />} />
           <Route path="/get-started" element={<GetStarted />} />
         </Routes>
+        <Footer />
       </Router>
+
     </div>
   );
 }
